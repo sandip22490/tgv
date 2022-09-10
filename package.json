@@ -1,7 +1,7 @@
 {
-  "name": "tfv",
-  "version": "2.5.0",
-  "description": "Terraform version manager",
+  "name": "tgv",
+  "version": "1.0.0",
+  "description": "Terragrunt version manager",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -11,20 +11,25 @@
     "postinstall": "node lib/utils/postInstall.js"
   },
   "bin": {
-    "tfv": "index.js"
+    "tgv": "index.js"
   },
   "keywords": [
-    "Terraform",
+    "Terragrunt",
     "version"
   ],
-  "author": "Marcus Chukwuoma <marcus2cu@gmail.com> (https://github.com/marcdomain)",
+  "author": "Sandip Patel <sandip22490@gmail.com> (https://github.com/sandip22490)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcdomain/tfv.git"
+    "url": "https://github.com/sandip22490/tgv.git"
   },
   "dependencies": {
     "decompress": "^4.2.1",
+    "follow-redirects": "^1.15.1",
     "yargs": "^17.2.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
